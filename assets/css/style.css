@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* div:not(.modal) {
+    filter: brightness(80%);
+} */
+.modal {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: #097067;
+    color: white;
+    top: 30%;
+    left: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.modal div {
+    padding: 10px;
+    background-color: #2196f3;
+    color: white;
+}
+.container {
+    display: flex;
+    background-color: #cbcbcb;
+    margin: 20px auto;
+    padding: 4px;
+    width: 90vw;
+    /* height: 65vh; */
+    border-radius: 30px;
+}
+.right-side .hint {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0% 0% 3% 30%;
+    background-color: #009688;
+    color: white;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 3%;
+}
+.right-side {
+    width: 60%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+h5.gusses {
+    color: black;
+    float: right;
+    margin-top: -10%;
+}
+.word .letter {
+    display: inline-flex;
+    background-color: #a3a2a2;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-bottom: 4px solid #2196f3;
+    width: 12%;
+    height: 55px;
+    margin-left: 3%;
+    justify-content: center;
+    border-radius: 10%;
+}
+.keyboard .keyboard-letter {
+    display: inline-block;
+    background-color: #009688;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+    margin: 10px 5px 6px 0px;
+    border-radius: 10%;
+}
+.keyboard .keyboard-letter:hover {
+    cursor: pointer;
+    background-color: #097067;
+}
+.keyboard .keyboard-letter.clicked {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(15%, 0%);
+    }
+    50% {
+        transform: translate(-25%, 0%);
+    }
+    75% {
+        transform: translate(15%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
