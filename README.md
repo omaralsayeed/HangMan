@@ -1,1 +1,1 @@
-# HangMan
+# HangMan Web Game
